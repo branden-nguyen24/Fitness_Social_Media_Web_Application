@@ -1,0 +1,10 @@
+export {default as Home} from './Home';
+export {default as Testimonials} from './Testimonials';
+export {default as Login} from './Login';
+export {default as Register} from './Register';
+export {default as CreateProfile} from './CreateProfile';
+export {default as Profile} from './Profile';
+export {default as Calendar} from './Calendar';
+export {default as Workouts} from './Workouts';
+export {default as Photos} from './Photos';
+export {default as FriendPosts} from './FriendPosts'
