@@ -3,7 +3,6 @@ import { useNavigate, Link } from 'react-router-dom';
 
 const Register = () => {
     const navigate = useNavigate();
-
     const handleSubmit = () => {
         navigate('/createprofile');
     }

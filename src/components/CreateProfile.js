@@ -5,7 +5,6 @@ const CreateProfile = () => {
     const navigate = useNavigate();
     
     const handleClick = () => {
-        console.log('inside handleClick')
         navigate('/profile');
     }
     return (

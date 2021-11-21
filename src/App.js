@@ -1,15 +1,17 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import { 
         Home, Testimonials, Login, 
         Register, CreateProfile, Profile, 
         Calendar, Workouts, Photos,
-        FriendPosts } 
+        FriendPosts, Logo } 
 from './components'
 
 function App() {
   return (
     <Router>
+      <Logo/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/testimonials' element={<Testimonials/>}/>

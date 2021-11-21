@@ -7,4 +7,5 @@ export {default as Profile} from './Profile';
 export {default as Calendar} from './Calendar';
 export {default as Workouts} from './Workouts';
 export {default as Photos} from './Photos';
-export {default as FriendPosts} from './FriendPosts'
+export {default as FriendPosts} from './FriendPosts';
+export {default as Logo} from './Logo';

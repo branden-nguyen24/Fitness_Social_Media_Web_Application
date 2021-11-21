@@ -20,6 +20,7 @@ const Profile = () => {
                 return;
             case 'logout':
                 navigate('/')
+                return;
             default: return;
         }
     }
