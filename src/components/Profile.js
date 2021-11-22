@@ -1,8 +1,11 @@
-import React from 'react'
-import { CustomPlaceholder } from 'react-placeholder-image'
-import { useNavigate } from 'react-router'
+import React from 'react';
+import { CustomPlaceholder } from 'react-placeholder-image';
+import { useNavigate } from 'react-router';
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../redux/actions/userActions';
 
 const Profile = () => {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
     const handleClick = (route) => {
         switch(route){
@@ -19,6 +22,7 @@ const Profile = () => {
                 navigate('/friendposts');
                 return;
             case 'logout':
+                dispatch(logoutUser());
                 navigate('/')
                 return;
             default: return;
