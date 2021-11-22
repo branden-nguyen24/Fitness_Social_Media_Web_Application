@@ -1,11 +1,13 @@
 import React from 'react';
 import { CustomPlaceholder } from 'react-placeholder-image';
 import { useNavigate } from 'react-router';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { logoutUser } from '../redux/actions/userActions';
 
 const Profile = () => {
     const dispatch = useDispatch();
+    const image = useSelector(state => state.userReducer.profileImage);
+    console.log('This is the image ', image);
     const navigate = useNavigate();
     const handleClick = (route) => {
         switch(route){
@@ -36,7 +38,8 @@ const Profile = () => {
             <button onClick={() => handleClick('logout')}>logout</button>
             </nav>
            
-            <CustomPlaceholder width={200} height={200}/>
+            
+            <img src={URL.createObjectURL(image)} width={200} height={200}/>
             <div>
                 <button onClick={() => handleClick('calendar')}>Calendar</button>
                 <button onClick={() => handleClick('workouts')}>Workouts</button>
