@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f1f1;
 }
 
 code {
@@ -15,22 +16,5 @@ code {
 .home-bttn{
   display: block;
   flex-wrap: wrap;
-  
-}
-
-/* css for Logo component */
-.logo-container{
-  width: 75vh;
-  max-width: 75vh;
-  height:50px;
-  max-height: 50px;
-  display: flex;
-}
-.logo-image{
-  max-height: 50px;
-  max-width: 250px;
-}
-
-.logo-text{
   
 }

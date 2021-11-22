@@ -7,17 +7,18 @@ const Login = () => {
         navigate('/profile');
     };
     return (
-        <div className="login">
+        <div className="login input-box">
             <form className="login-form" onSubmit={() => handleSubmit()}>
+                <h3>Login</h3>
                 <div>
-                    <label>enter email</label>
-                    <input/>
+                    <label>Email:</label>
+                    <input placeholder="Please enter email"/>
                 </div>
                 <div>
-                    <label>enter password</label>
-                    <input/>
+                    <label>Password:</label>
+                    <input placeholder="Please enter password"/>
                 </div>
-                <button type="submit">login</button>
+                <button type="submit">Login</button>
                 
             </form>
         </div>
