@@ -5,7 +5,7 @@ import {
         Home, Testimonials, Login, 
         Register, CreateProfile, Profile, 
         Calendar, Workouts, Photos,
-        FriendPosts, Logo } 
+        FriendPosts, Logo, CreatePost } 
 from './components'
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route path='/workouts' element={<Workouts/>}/>
         <Route path='/photos' element={<Photos/>}/>
         <Route path='/friendposts' element={<FriendPosts/>}/>
+        <Route path='/createpost' element={<CreatePost/>}/>
         
       </Routes>
     </Router>

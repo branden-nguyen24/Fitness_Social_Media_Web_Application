@@ -31,6 +31,9 @@ const Profile = () => {
                 dispatch(logoutUser());
                 navigate('/')
                 return;
+            case 'createpost':
+                navigate('/createpost');
+                return;
             default: return;
         }
     }
@@ -38,17 +41,16 @@ const Profile = () => {
     return (
         <div className="profile-container">
             <nav> 
-            <input placeholder="search"/>
-            <button onClick={() => handleClick('logout')}>logout</button>
+                <input placeholder="search"/>
+                <button onClick={() => handleClick('logout')}>logout</button>
             </nav>
-           
-            
-            <img src={URL.createObjectURL(image)} width={200} height={200}/>
-            <h3>{nickname}</h3>
-            <h5>{description}</h5>
-            <h5>Activities</h5>
-            {activities.map(activity => <h6>{activity}</h6>)}
-            
+            <div className="profile-info-container">
+                <img src={URL.createObjectURL(image)} width={200} height={200}/>
+                <h3>{nickname}</h3>
+                <h5>{description}</h5>
+                <h5>Activities</h5>
+                {activities.map(activity => <h6>{activity}</h6>)}
+            </div>
             <div>
                 <button onClick={() => handleClick('calendar')}>Calendar</button>
                 <button onClick={() => handleClick('workouts')}>Workouts</button>
@@ -56,10 +58,12 @@ const Profile = () => {
                 <button onClick={() => handleClick('friendposts')}>Friend Posts</button>
             </div>
             <div>
-            <CustomPlaceholder width={700} height={400}/><br/>
-            <CustomPlaceholder width={700} height={400}/><br/>
-            <CustomPlaceholder width={700} height={400}/>
+                <CustomPlaceholder width={700} height={400}/><br/>
+                <CustomPlaceholder width={700} height={400}/><br/>
+                <CustomPlaceholder width={700} height={400}/>
             </div>
+            <button onClick={() => handleClick('createpost')}>create post</button>
+            
         </div>
     )
 }
