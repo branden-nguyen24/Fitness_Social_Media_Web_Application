@@ -3,6 +3,7 @@ import { CustomPlaceholder } from 'react-placeholder-image';
 import { useNavigate } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 import { logoutUser } from '../redux/actions/userActions';
+import { Posts } from './';
 
 const Profile = () => {
     const dispatch = useDispatch();
@@ -45,7 +46,7 @@ const Profile = () => {
                 <button onClick={() => handleClick('logout')}>logout</button>
             </nav>
             <div className="profile-info-container">
-                <img src={URL.createObjectURL(image)} width={200} height={200}/>
+                <img src={URL.createObjectURL(image)} width={200} height={200} alt="NO IMG"/>
                 <h3>{nickname}</h3>
                 <h5>{description}</h5>
                 <h5>Activities</h5>
@@ -62,6 +63,7 @@ const Profile = () => {
                 <CustomPlaceholder width={700} height={400}/><br/>
                 <CustomPlaceholder width={700} height={400}/>
             </div>
+            <Posts/>
             <button onClick={() => handleClick('createpost')}>create post</button>
             
         </div>

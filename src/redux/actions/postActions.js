@@ -8,8 +8,7 @@ export const setPostDescription = (postDescription) => ({
     payload: postDescription
 })
 
-export const insertPost = (getState) => {
-    { postReducer } = getState();
-    
-
-}
+export const insertPost = (post) => ({
+    type: 'INSERT_POST',
+    payload: post
+})

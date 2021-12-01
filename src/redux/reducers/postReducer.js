@@ -5,6 +5,7 @@ const initialState = () => ({
 });
 
 const postReducer = (state = initialState(), action) => {
+    console.log(state);
     switch(action.type){
         case 'SET_POST_IMAGE':
             return{
@@ -15,6 +16,11 @@ const postReducer = (state = initialState(), action) => {
             return{
                 ...state,
                 postDescription: action.payload
+            }
+        case 'INSERT_POST':
+            return {
+                ...state,
+                posts: [...state.posts, action.payload]
             }
         default: return state
     }
