@@ -38,16 +38,16 @@ const Home = () => {
         </div>
         <nav>
           <button onClick={() => handleClick("testimonials")}>
-            testimonials
+            Testimonials
           </button>
           <button className="login-button" onClick={() => handleClick("login")}>
-            log in
+            Log In
           </button>
           <button
             className="reg-button"
             onClick={() => handleClick("register")}
           >
-            register
+            Register
           </button>
         </nav>
       </div>

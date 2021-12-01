@@ -6,15 +6,13 @@ import pan2 from '../../src/home3.png';
 import pan3 from '../../src/home4.png';
 
 const Photos = () => {
-    return (
-        
+    return (        
     <div>
-        <img src={pan}  width={800}  height={250}  alt="NO IMG"/> 
-        <img src={pan1} width={800}  height={250} alt="NO IMG"/>   
-        <img src={pan2} width={800}  height={250} alt="NO IMG"/> 
-        <img src={pan3} width={800}  height={250} alt="NO IMG"/> 
-     </div>
-           
+        <img src={pan}  width={600}  height={315}  alt="NO IMG"/> 
+        <img src={pan1} width={600}  height={315} alt="NO IMG"/>   
+        <img src={pan2} width={600}  height={315} alt="NO IMG"/> 
+        <img src={pan3} width={600}  height={315} alt="NO IMG"/> 
+     </div>         
     )
 }
 
