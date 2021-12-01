@@ -14,21 +14,23 @@ const CreateProfile = () => {
         navigate('/profile');
     }
     return (
-        <div className="createprofile-container">
+        <div className="createprofile-container input-box">
+            <h2>Create Profile</h2>
             <div>
-                <label>Your Display Nickname</label><br/>
+                <label>Your Display Nickname</label>
                 <input
                     value={nickname}
+                    placeholder="Enter nickname"
                     onChange={e => dispatch(setNickname(e.target.value))}
                 />
             </div>
             <div>
-                <label>Tell Us About Yourself</label><br/>
-                <textarea onChange={e => dispatch(setAboutMe(e.target.value))}>{aboutMe}</textarea>
+                <label>Tell Us About Yourself</label>
+                <textarea placeholder="Input something" onChange={e => dispatch(setAboutMe(e.target.value))}>{aboutMe}</textarea>
             </div>
             <div>
                 <label>Pick your favorite activities</label>
-                <form>
+                <form className="checkbox-form">
                     <input type="checkbox" onClick={() => dispatch(setActivities('weight training'))}/>
                     <label>Weight Training</label><br/>
                     <input type="checkbox" onClick={() => dispatch(setActivities('running'))}/>
@@ -40,18 +42,18 @@ const CreateProfile = () => {
                     <input type="checkbox" onClick={() => dispatch(setActivities('sports'))}/>
                     <label> Sports</label><br/>
                     <input type="checkbox" onClick={() => dispatch(setActivities('bicycling'))}/>
-                    <label> Bicycling</label><br/>
+                    <label> Bicycling</label>
                 </form>
             </div>
             <div>
-                <label>upload photo</label><br/>
+                <label>Upload photo</label>
                 <input 
                     type="file"
                     accept=".png,.jpeg"
                     onChange={e => dispatch(setProfileImage(e.target.files[0]))}
                     />
             </div>
-            <button onClick={() => handleClick()}>make profile</button>
+            <button onClick={() => handleClick()}>Make profile</button>
         </div>
     )
 }

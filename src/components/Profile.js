@@ -40,6 +40,7 @@ const Profile = () => {
     }
     
     return (
+      <div>
         <div className="profile-container">
             <nav> 
                 <input placeholder="search"/>
@@ -67,7 +68,13 @@ const Profile = () => {
             <button onClick={() => handleClick('createpost')}>create post</button>
             
         </div>
-    )
-}
+        <nav>
+          <CustomPlaceholder width={200} height={200} />
+          <input placeholder="search" />
+          <button onClick={() => handleClick("logout")}>Logout</button>
+        </nav>
+      </div>
+  );
+};
 
-export default Profile
+export default Profile;

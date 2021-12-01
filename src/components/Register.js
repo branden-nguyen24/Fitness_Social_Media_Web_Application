@@ -17,39 +17,44 @@ const Register = () => {
         navigate('/createprofile');
     }
     return (
-        <div className="register-container">
+        <div className="register-container input-box">
+            <h2>Register</h2>
             <form className="register-form" onSubmit={() => handleSubmit()}>
                 <div className="register-item">
-                    <label>First Name</label>
+                    <label>First Name:</label>
                     <input
                         value={firstName}
+                        placeholder="Enter first name"
                         onChange={e => dispatch(setFirstName(e.target.value))}
                     />
                 </div>
                 <div className="register-item">
-                    <label>Last Name</label>
+                    <label>Last Name:</label>
                     <input
                         value={lastName}
+                        placeholder="Enter last name"
                         onChange={e => dispatch(setLastName(e.target.value))}
                     />
                 </div>
                 <div className="register-item">
-                    <label>Email</label>
+                    <label>Email:</label>
                     <input
                         type='email'
                         value={email}
+                        placeholder="Enter email"
                         onChange={e => dispatch(setEmail(e.target.value))}
                     />
                 </div>
                 <div className="register-item">
-                    <label>Password</label>
+                    <label>Password:</label>
                     <input
                         type='password'
                         value={password}
+                        placeholder="Enter password"
                         onChange={e => dispatch(setPassword(e.target.value))}
                     />
                 </div>
-                <button type="submit">join</button>
+                <button type="submit">Join</button>
             </form>
             <Link to='/login'>already have an account?</Link>
         </div>
