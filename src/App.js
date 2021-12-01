@@ -7,6 +7,7 @@ import {
   Login,
   Register,
   CreateProfile,
+  CreatePost,
   Profile,
   Calendar,
   Workouts,
@@ -21,7 +22,7 @@ function App() {
       <Logo />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}/>
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -31,6 +32,7 @@ function App() {
           <Route path="/workouts" element={<Workouts />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/friendposts" element={<FriendPosts />} />
+          <Route path='/createpost' element={<CreatePost/>}/>
         </Routes>
       </div>
     </Router>

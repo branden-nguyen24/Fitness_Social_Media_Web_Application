@@ -6,6 +6,7 @@ const initialState = () => ({
     nickname: '',
     aboutMe: '',
     activities: [],
+    profileImage: '',
     isLoggedIn: false
 })
 
@@ -45,6 +46,11 @@ const userReducer = (state = initialState(), action) => {
             return{
                 ...state,
                 activities: [...state.activities, action.payload]
+            }
+        case 'SET_PROFILE_IMAGE':
+            return{
+                ...state,
+                profileImage: action.payload
             }
         case 'LOGIN_USER':
             return{

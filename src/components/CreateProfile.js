@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { setNickname, setAboutMe, setActivities } from '../redux/actions/userActions';
+import { setNickname, setAboutMe, setActivities, setProfileImage } from '../redux/actions/userActions';
 
 
 const CreateProfile = () => {
@@ -49,8 +49,9 @@ const CreateProfile = () => {
                 <label>Upload photo</label>
                 <input 
                     type="file"
-                    accept=".png,.jpeg"/>
-                    <div className="upload-cover">Choose a photo</div>
+                    accept=".png,.jpeg"
+                    onChange={e => dispatch(setProfileImage(e.target.files[0]))}
+                    />
             </div>
             <button onClick={() => handleClick()}>Make profile</button>
         </div>

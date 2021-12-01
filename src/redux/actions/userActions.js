@@ -33,6 +33,11 @@ export const setActivities = (activity) => ({
     payload: activity
 })
 
+export const setProfileImage = (profileImage) => ({
+    type: 'SET_PROFILE_IMAGE',
+    payload: profileImage
+})
+
 export const loginUser = () => ({
     type: 'LOGIN_USER',
     payload: true

@@ -9,3 +9,5 @@ export {default as Workouts} from './Workouts';
 export {default as Photos} from './Photos';
 export {default as FriendPosts} from './FriendPosts';
 export {default as Logo} from './Logo';
+export {default as CreatePost} from './CreatePost';
+export {default as Posts} from './Posts';
