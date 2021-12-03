@@ -5,6 +5,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { logoutUser } from '../redux/actions/userActions';
 import { Posts } from './';
 
+import home from '../../src/home.png';
+import home2 from '../../src/home2.png';
+import pro1 from '../../src/pro1.png';
+import pro2 from '../../src/pro2.png';
+import './Profile.css';
+
 const Profile = () => {
     const dispatch = useDispatch();
     const image = useSelector(state => state.userReducer.profileImage);
@@ -40,14 +46,14 @@ const Profile = () => {
     }
     
     return (
-      <div>
+      <div className= "profile-all">
         <div className="profile-container">
             <nav> 
                 <input placeholder="search"/>
                 <button onClick={() => handleClick('logout')}>logout</button>
             </nav>
             <div className="profile-info-container">
-                <img src={URL.createObjectURL(image)} width={200} height={200} alt="NO IMG"/>
+                <br/><img src={URL.createObjectURL(image)} width={200} height={200} alt="NO IMG"/> 
                 <h3>{nickname}</h3>
                 <h5>{description}</h5>
                 <h5>Activities</h5>
@@ -60,16 +66,21 @@ const Profile = () => {
                 <button onClick={() => handleClick('friendposts')}>Friend Posts</button>
             </div>
             <div>
+                {/* <CustomPlaceholder width={700} height={400}/><br/>
                 <CustomPlaceholder width={700} height={400}/><br/>
-                <CustomPlaceholder width={700} height={400}/><br/>
-                <CustomPlaceholder width={700} height={400}/>
+                <CustomPlaceholder width={700} height={400}/> */}
+                <br/>
+                <img src={home}  width={700}  height={400} /> 
+                <img src={home2}  width={700}  height={400} /> 
+                <img src={pro1}  width={700}  height={400} /> 
+                <img src={pro2}  width={700}  height={400} /> 
             </div>
             <Posts/>
-            <button onClick={() => handleClick('createpost')}>create post</button>
+            <br/><button onClick={() => handleClick('createpost')}>Create Post</button>
             
         </div>
         <nav>
-          <CustomPlaceholder width={200} height={200} />
+          <br/><CustomPlaceholder width={200} height={200} />
           <input placeholder="search" />
           <button onClick={() => handleClick("logout")}>Logout</button>
         </nav>
