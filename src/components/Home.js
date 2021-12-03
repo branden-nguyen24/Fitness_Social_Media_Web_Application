@@ -1,6 +1,10 @@
 import React from "react";
 import { CustomPlaceholder } from "react-placeholder-image";
 import { useNavigate } from "react-router-dom";
+import home from '../../src/home.png';
+import home2 from '../../src/home2.png';
+import pro1 from '../../src/pro1.png';
+import pro2 from '../../src/pro2.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -24,15 +28,15 @@ const Home = () => {
     <div className="home-container">
       <div className="layout">
         <div>
-            <h1>Home</h1>
+            <h1>Welcome!</h1>
             <div>
-            <CustomPlaceholder width={700} height={400} />
+            <img src={home}  width={700}  height={400} /> 
             <br />
-            <CustomPlaceholder width={700} height={400} />
+            <img src={home2}  width={700}  height={400} /> 
             <br />
-            <CustomPlaceholder width={700} height={400} />
+            <img src={pro1}  width={700}  height={400} /> 
             <br />
-            <CustomPlaceholder width={700} height={400} />
+            <img src={pro2}  width={700}  height={400} /> 
             <br />
           </div>
         </div>
