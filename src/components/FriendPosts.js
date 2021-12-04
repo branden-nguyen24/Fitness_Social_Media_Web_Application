@@ -11,6 +11,7 @@ import foo6 from '../../src/pro6.png';
 
 const FriendPosts = () => {
     return (
+        
          <div class="card mb-3">     
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={foo} height={200} width = {250} />
