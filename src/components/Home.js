@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import home from '../../src/home.png';
 import home2 from '../../src/pro6.png';
 import home3 from '../../src/home3.png';
-import './home.css'
+import './Home.css'
 import './search.css'
 
 
@@ -35,7 +35,7 @@ const Home = () => {
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            
+                
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
@@ -47,7 +47,7 @@ const Home = () => {
                 <div>
                     <ul>
                      <a><button type="button" class="btn btn-primary button-space" onClick={() => handleClick("login")}>Login</button></a>
-                     <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("register")}>SignUp</button>
+                     <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("register")}>Register</button>
                      <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("testimonials")}>Testimonials</button>
                     </ul>
                 </div>
