@@ -22,7 +22,7 @@ const FriendPosts = () => {
                         <Card.Text>
                             “All progress takes place outside the comfort zone.”
                         </Card.Text>
-                    <Button variant="primary">Go Profile</Button>
+                    <Button variant="primary">Profile</Button>
                 </Card.Body>
         </Card><br/>
 
@@ -34,7 +34,7 @@ const FriendPosts = () => {
                         <Card.Text>
                         “The pain you feel today, will be the strength you feel tomorrow.”
                         </Card.Text>
-                <Button variant="primary">Go Profile</Button>
+                <Button variant="primary">Profile</Button>
             </Card.Body>
         </Card><br/>
 
@@ -46,7 +46,7 @@ const FriendPosts = () => {
                     <Card.Text>
                     “A little progress each day adds up to big results”
                     </Card.Text>
-                <Button variant="primary">Go Profile</Button>
+                <Button variant="primary">Profile</Button>
             </Card.Body>
         </Card><br/>
 
@@ -58,7 +58,7 @@ const FriendPosts = () => {
                     <Card.Text>
                     “A one hour workout is 4% of your day. No excuses.”
                     </Card.Text>
-                <Button variant="primary">Go Profile</Button>
+                <Button variant="primary">Profile</Button>
             </Card.Body>
         </Card><br/>
 
@@ -70,7 +70,7 @@ const FriendPosts = () => {
                     <Card.Text>
                     “Rome wasn’t built in a day. Work hard, good results will come.”
                     </Card.Text>
-                <Button variant="primary">Go Profile</Button>
+                <Button variant="primary">Profile</Button>
             </Card.Body>
         </Card><br/>
 
@@ -82,7 +82,7 @@ const FriendPosts = () => {
                     <Card.Text>
                     “You are one workout away from a better mood”
                     </Card.Text>
-                <Button variant="primary">Go Profile</Button>
+                <Button variant="primary">Profile</Button>
             </Card.Body>
         </Card><br/>
         </div>    

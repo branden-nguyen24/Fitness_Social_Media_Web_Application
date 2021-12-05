@@ -68,7 +68,7 @@ const Home = () => {
                                     type="search" placeholder="What are you waiting for?" ></input>
                               </div>
                              <div className="col-auto"> 
-                               <button className="btn btn-lg btn-success" type="button">Search</button> 
+                               <button className="btn btn-lg btn-primary" type="button">Search</button> 
                               </div>
                             </div>
                          </form>
