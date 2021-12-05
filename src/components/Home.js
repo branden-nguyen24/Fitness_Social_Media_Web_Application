@@ -6,7 +6,7 @@ import home from '../../src/home.png';
 import home2 from '../../src/pro6.png';
 import home3 from '../../src/home3.png';
 import './Home.css'
-import './search.css'
+
 
 
 
@@ -68,7 +68,7 @@ const Home = () => {
                                     type="search" placeholder="What are you waiting for?" ></input>
                               </div>
                              <div className="col-auto"> 
-                               <button className="btn btn-lg btn-success" type="button">Search</button> 
+                             <button type="button" className="btn btn-lg btn-success" >Search</button> 
                               </div>
                             </div>
                          </form>
