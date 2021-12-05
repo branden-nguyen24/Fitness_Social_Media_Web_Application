@@ -1,0 +1,146 @@
+.snap-logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.button-space {
+    margin-right: 5px;
+    padding-bottom: 5px;
+}
+
+.food-card {
+    width: 10px;
+    margin-left: 10%;
+    padding-top: 5%;
+}
+.child {
+    margin: 100px 0;
+  }
+
+  .childhome {
+    margin: 50px 0;
+  } 
+
+.homepage {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 10px;
+}
+
+.navbar-snapdeliver {
+    margin-bottom: 5%;
+    
+}
+
+.page {
+    background-color: white;
+}
+
+.container-login {
+    background-color: aliceblue;
+    border-bottom: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+}
+
+.login {
+    margin-top: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-size: 50px;
+}
+
+.submit-button {
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    height: 40px;
+    width: 700px;
+}
+
+.cancel-button {
+    font-weight: bold;
+    background-color: red !important;
+    color: white;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+    height: 40px;
+    width: 700px;
+}
+
+.input-login {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.login-background {
+    margin-top: 10%;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.create-account {
+    padding-bottom: 5%;
+}
+
+.homewallpaper{
+   position: relative;
+   min-height: 100%; /*THIS FREAKING THING FIT THE WHOLE BACKGROUND IMAGE*/
+    min-width: 100%; /*THIS FREAKING THING FIT THE WHOLE BACKGROUND IMAGE*/
+}
+
+/*Caption on top of wallpaper*/
+.caption{
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 35%;
+    align-items: center;
+    font-weight: bold;
+    font-family: Helvetica;
+   
+}
+
+/*home search bar */
+.search-bar{
+
+    position: absolute;
+    margin-top: -400px;
+    margin-right: 0px;
+
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.cardbody {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0rem;
+}
+
+
+ .bgg-light {
+     background-color: white !important;
+ }
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .thumbnail {
+    position: relative;
+    margin-bottom: 0;
+    border: 0;
+    border-color: transparent;
+}
+

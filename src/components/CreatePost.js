@@ -22,7 +22,7 @@ const CreatePost = () => {
     return (
         <form className="createpost-container" onSubmit={handleOnSubmit}>
             <div className="createpost-uploadphoto">
-                <label>upload photo</label><br/>
+                <label>Upload Photo</label><br/>
                 <input 
                     type="file"
                     accept=".png,.jpeg" 
@@ -35,7 +35,7 @@ const CreatePost = () => {
                     onChange={e => dispatch(setPostDescription(e.target.value))}
                 > </textarea>
             </div>
-            <button type="submit">post</button>
+            <button type="submit">Post</button>
         </form>
     )
 }

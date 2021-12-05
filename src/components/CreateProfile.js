@@ -31,17 +31,17 @@ const CreateProfile = () => {
             <div>
                 <label>Pick your favorite activities</label>
                 <form className="checkbox-form">
-                    <input type="checkbox" onClick={() => dispatch(setActivities('weight training'))}/>
+                    <input type="checkbox" onClick={() => dispatch(setActivities('Weight training'))}/>
                     <label>Weight Training</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('running'))}/>
+                    <input type="checkbox" onClick={() => dispatch(setActivities('Running'))}/>
                     <label> Running</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('swimming'))}/>
+                    <input type="checkbox" onClick={() => dispatch(setActivities('Swimming'))}/>
                     <label> Swimming</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('yoga'))}/>
+                    <input type="checkbox" onClick={() => dispatch(setActivities('Yoga'))}/>
                     <label> Yoga</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('sports'))}/>
+                    <input type="checkbox" onClick={() => dispatch(setActivities('Sports'))}/>
                     <label> Sports</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('bicycling'))}/>
+                    <input type="checkbox" onClick={() => dispatch(setActivities('Bicycling'))}/>
                     <label> Bicycling</label>
                 </form>
             </div>
