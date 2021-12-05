@@ -1,0 +1,9 @@
+.profile-all{
+    text-align: center;
+}
+.card-img-top {
+    width: 45%;
+    height: 40vh;
+    object-fit: cover;
+   
+}
