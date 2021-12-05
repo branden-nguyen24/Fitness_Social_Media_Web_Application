@@ -68,7 +68,11 @@ const Home = () => {
                                     type="search" placeholder="What are you waiting for?" ></input>
                               </div>
                              <div className="col-auto"> 
+<<<<<<< HEAD
                              <button type="button" className="btn btn-lg btn-success" >Search</button> 
+=======
+                               <button className="btn btn-lg btn-primary" type="button">Search</button> 
+>>>>>>> origin/master
                               </div>
                             </div>
                          </form>

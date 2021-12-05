@@ -8,6 +8,7 @@ import pan3 from '../../src/home4.png';
 const Photos = () => {
     return (        
     <div>
+        <br/>
         <img src={pan}  width={600}  height={315}  alt="NO IMG"/> 
         <img src={pan1} width={600}  height={315} alt="NO IMG"/>   
         <img src={pan2} width={600}  height={315} alt="NO IMG"/> 
