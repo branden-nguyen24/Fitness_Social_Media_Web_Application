@@ -12,9 +12,9 @@ import foo6 from '../../src/pro6.png';
 const FriendPosts = () => {
     return (
         
-         <div class="card mb-3">     
-        <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={foo} height={300} width = {350} />
+        <div class="card mb-3" style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>     
+        <Card className="text-center" style={{ width: '50rem' }}>
+            <Card.Img variant="top" src={foo} height={300} width = {250} />
                 <Card.Body>
                     <Card.Title> Ned Stark </Card.Title>
                         <Card.Text>
@@ -22,10 +22,10 @@ const FriendPosts = () => {
                         </Card.Text>
                     <Button variant="primary">Go Profile</Button>
                 </Card.Body>
-        </Card>
+        </Card><br/>
 
-       <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={foo2} height={300} width = {350}/>
+       <Card className="text-center" style={{ width: '50rem' }}>
+            <Card.Img variant="top" src={foo2} height={300} width = {250}/>
                 <Card.Body>
                     <Card.Title>Roose Bolton</Card.Title>
                         <Card.Text>
@@ -33,10 +33,10 @@ const FriendPosts = () => {
                         </Card.Text>
                 <Button variant="primary">Go Profile</Button>
             </Card.Body>
-        </Card>
+        </Card><br/>
 
-       <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={foo3} height={300} width = {350} />
+       <Card className="text-center" style={{ width: '50rem' }}>
+            <Card.Img variant="top" src={foo3} height={300} width = {250} />
             <Card.Body>
                 <Card.Title>Bran Stark </Card.Title>
                     <Card.Text>
@@ -44,10 +44,10 @@ const FriendPosts = () => {
                     </Card.Text>
                 <Button variant="primary">Go Profile</Button>
             </Card.Body>
-        </Card>
+        </Card><br/>
 
-        <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={foo4} height={300} width = {350} />
+        <Card className="text-center" style={{ width: '50rem' }}>
+            <Card.Img variant="top" src={foo4} height={300} width = {250} />
             <Card.Body>
                 <Card.Title> Cersei Lannister </Card.Title>
                     <Card.Text>
@@ -55,10 +55,10 @@ const FriendPosts = () => {
                     </Card.Text>
                 <Button variant="primary">Go Profile</Button>
             </Card.Body>
-        </Card>
+        </Card><br/>
 
-        <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={foo5} height={300} width = {350} />
+        <Card className="text-center" style={{ width: '50rem' }}>
+            <Card.Img variant="top" src={foo5} height={300} width = {250} />
             <Card.Body>
                 <Card.Title>Tywin Lannister </Card.Title>
                     <Card.Text>
@@ -66,10 +66,10 @@ const FriendPosts = () => {
                     </Card.Text>
                 <Button variant="primary">Go Profile</Button>
             </Card.Body>
-        </Card>
+        </Card><br/>
 
-        <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={foo6} height={300} width = {350} />
+        <Card className="text-center" style={{ width: '50rem' }}>
+            <Card.Img variant="top" src={foo6} height={300} width = {250} />
             <Card.Body>
                 <Card.Title>Arya Stark </Card.Title>
                     <Card.Text>
@@ -77,7 +77,7 @@ const FriendPosts = () => {
                     </Card.Text>
                 <Button variant="primary">Go Profile</Button>
             </Card.Body>
-        </Card>
+        </Card><br/>
         </div>    
     )
 }
