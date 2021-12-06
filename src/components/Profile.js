@@ -29,6 +29,9 @@ const Profile = () => {
             case 'photos':
                 navigate('/photos');
                 return;
+                case "search":
+                    navigate("/search");
+                    return; 
             case 'friendposts':
                 navigate('/friendposts');
                 return;
@@ -81,7 +84,7 @@ const Profile = () => {
                                     type="search" placeholder="What are you waiting for?" ></input>
                               </div>
                              <div className="col-auto"> 
-                               <button className="btn btn-lg btn-primary" type="button">Search</button> 
+                               <button className="btn btn-lg btn-primary" type="button"onClick={() => handleClick("search")}>Search</button> 
                               </div>
                             </div>
                          </form>

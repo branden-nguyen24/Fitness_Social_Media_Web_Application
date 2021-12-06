@@ -6,6 +6,7 @@ import home from '../../src/home.png';
 import home2 from '../../src/pro6.png';
 import home3 from '../../src/home3.png';
 import './Home.css'
+import './Search'
 
 
 
@@ -21,6 +22,9 @@ const Home = () => {
       case "login":
         navigate("/login");
         return;
+        case "search":
+          navigate("/search");
+          return; 
       case "register":
         navigate("register");
         return;
@@ -68,11 +72,7 @@ const Home = () => {
                                     type="search" placeholder="What are you waiting for?" ></input>
                               </div>
                              <div className="col-auto"> 
-<<<<<<< HEAD
-                             <button type="button" className="btn btn-lg btn-success" >Search</button> 
-=======
-                               <button className="btn btn-lg btn-primary" type="button">Search</button> 
->>>>>>> origin/master
+                               <button className="btn btn-lg btn-primary" type="button" onClick={() => handleClick("search")}>Search</button> 
                               </div>
                             </div>
                          </form>
