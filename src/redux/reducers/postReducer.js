@@ -5,7 +5,6 @@ const initialState = () => ({
 });
 
 const postReducer = (state = initialState(), action) => {
-    console.log(state);
     switch(action.type){
         case 'SET_POST_IMAGE':
             return{

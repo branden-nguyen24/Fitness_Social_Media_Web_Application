@@ -13,13 +13,13 @@ import {
   Workouts,
   Photos,
   FriendPosts,
-  Logo,
+  Navbar,
 } from "./components";
 
 function App() {
   return (
     <Router>
-      <Logo />
+      <Navbar />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />}/>

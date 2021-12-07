@@ -31,60 +31,14 @@ const Home = () => {
 
   return (
    <div>
-     <nav class="navbar navbar-expand-lg navbar-light bgg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                        <a class="nav-link homepage" href="/"><span class="sr-only"></span></a>
-                        </li>
-                    </ul>   
-                </div>
-
-                <div>
-                    <ul>
-                     <a><button type="button" class="btn btn-primary button-space" onClick={() => handleClick("login")}>Login</button></a>
-                     <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("register")}>Register</button>
-                     <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("testimonials")}>Testimonials</button>
-                    </ul>
-                </div>
-      </nav>
-      
-
-    <div>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-                        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-            <div className="container">
-              <div class="thumbnail">
-                    <div className="row justify-content-center">
-                      <div className="col-12 col-md-10 col-lg-8 col-sm-4 search-bar">
-                         <form className="card card-sm" >
-                            <div className="cardbody row no-gutters align-items-center">        
-                              <div className="col">
-                                 <input className="form-control form-control-lg "
-                                    type="search" placeholder="What are you waiting for?" ></input>
-                              </div>
-                             <div className="col-auto"> 
-                               <button className="btn btn-lg btn-primary" type="button">Search</button> 
-                              </div>
-                            </div>
-                         </form>
-                      </div> 
-                   </div>
-               </div>
-                   <br/>
-             </div>
-      </div>
+     
       <div class="child">  </div>
       <h4 className="" align = "center">Time to Exercise! Popular Places Near SFSU</h4> 
       <div class="childhome">  </div>
 
 
 
- <div className="card-group">
+ {/* <div className="card-group">
         <div>
             <Card style={{ width: '26rem' }}>
             <Card.Img variant="top" src={home} height={200} width = {250} />
@@ -130,18 +84,63 @@ const Home = () => {
                     <li className="list-inline-item"><a href="#">Partner</a></li>
 
                 </ul>
-            </footer>         
+            </footer>          */}
 </div>      
            
-
-
-
-
-    
-        
-
-
   );
 };
 
 export default Home;
+
+
+
+
+
+
+{/* <nav class="navbar navbar-expand-lg navbar-light bgg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                        <a class="nav-link homepage" href="/"><span class="sr-only"></span></a>
+                        </li>
+                    </ul>   
+                </div>
+
+                <div>
+                    <ul>
+                     <a><button type="button" class="btn btn-primary button-space" onClick={() => handleClick("login")}>Login</button></a>
+                     <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("register")}>Register</button>
+                     <button type="button" class="btn btn-primary button-space" onClick={() => handleClick("testimonials")}>Testimonials</button>
+                    </ul>
+                </div>
+      </nav>
+      
+
+    <div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+                        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+            <div className="container">
+              <div class="thumbnail">
+                    <div className="row justify-content-center">
+                      <div className="col-12 col-md-10 col-lg-8 col-sm-4 search-bar">
+                         <form className="card card-sm" >
+                            <div className="cardbody row no-gutters align-items-center">        
+                              <div className="col">
+                                 <input className="form-control form-control-lg "
+                                    type="search" placeholder="What are you waiting for?" ></input>
+                              </div>
+                             <div className="col-auto"> 
+                               <button className="btn btn-lg btn-primary" type="button">Search</button> 
+                              </div>
+                            </div>
+                         </form>
+                      </div> 
+                   </div>
+               </div>
+                   <br/>
+             </div>
+      </div> */}
