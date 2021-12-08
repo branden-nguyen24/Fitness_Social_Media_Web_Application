@@ -12,14 +12,15 @@ const Register = () => {
     const password = useSelector(state => state.userReducer.password);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         dispatch(loginUser())
         navigate('/createprofile');
     }
     return (
         <div className="register-container input-box">
             <h2>Register</h2>
-            <form className="register-form" onSubmit={() => handleSubmit()}>
+            <form className="register-form" onSubmit={(e) => handleSubmit(e)}>
                 <div className="register-item">
                     <label>First Name:</label>
                     <input

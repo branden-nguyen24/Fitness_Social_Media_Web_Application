@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import { setNickname, setAboutMe, setActivities, setProfileImage } from '../redux/actions/userActions';
 
-
 const CreateProfile = () => {
     useSelector(state => console.log('inside here', state))//just for test
     const nickname = useSelector(state => state.userReducer.nickname)
     const aboutMe = useSelector(state => state.userReducer.aboutme)
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.preventDefault();
         navigate('/profile');
     }
     return (
@@ -24,9 +24,14 @@ const CreateProfile = () => {
                     onChange={e => dispatch(setNickname(e.target.value))}
                 />
             </div>
-            <div>
+            <div className="form-group">
                 <label>Tell Us About Yourself</label>
-                <textarea placeholder="Input something" onChange={e => dispatch(setAboutMe(e.target.value))}>{aboutMe}</textarea>
+                <textarea 
+                    className="form-control"
+                    rows={10}
+                    placeholder="Input something" 
+                    onChange={e => dispatch(setAboutMe(e.target.value))}
+                >{aboutMe}</textarea>
             </div>
             <div>
                 <label>Pick your favorite activities</label>
@@ -53,7 +58,7 @@ const CreateProfile = () => {
                     onChange={e => dispatch(setProfileImage(e.target.files[0]))}
                     />
             </div>
-            <button onClick={() => handleClick()}>Make profile</button>
+            <button onClick={(e) => handleClick(e)}>Make profile</button>
         </div>
     )
 }

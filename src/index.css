@@ -156,6 +156,7 @@ code {
 .navbar-container{
   padding:5px;
   position:relative;
+  border-bottom: black;
 }
 .navbar-logo, #navbar-search{
   float:left;
@@ -180,6 +181,32 @@ code {
   font-weight: bold;
   color:rgb(44, 110, 244);
 }
+
+/* Register component styling */
+.register-container.input-box, .createprofile-container.input-box{
+  margin-top: 100px;
+}
+
+/* Profile component styling */
+.profile-container{
+  width: 100%;
+  margin-top:100px
+  
+}
+.card.mb-3{
+  width:100%;
+}
+.profile-details{
+  margin-top: 30px;
+
+}
+.profile-details img{
+  border-radius: 50%;
+  height:300px;
+  width:300px;
+}
+
+
 
 
 
