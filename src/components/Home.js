@@ -87,10 +87,10 @@ const Home = () => {
       <div class="childhome">  </div>
 
 
-
- <div className="card-group">
+      <div className="card-group">
         <div>
-            <Card style={{ width: '26rem' }}>
+            <Card className="text-center" style={{ width: '26rem', alignItems: 'center'}}>
+            <br/>
             <Card.Img variant="top" src={home} height={200} width = {250} />
                 <Card.Body>
                     <Card.Title> Power Zone </Card.Title>
@@ -102,7 +102,8 @@ const Home = () => {
              </Card> 
         </div>     
         <div>
-            <Card style={{ width: '26rem' }}>
+            <Card className="text-center" style={{ width: '26rem', alignItems: 'center'}}>
+            <br/>
             <Card.Img variant="top" src={home2} height={200} width = {250} />
                 <Card.Body>
                     <Card.Title> The Muscle Bar </Card.Title>
@@ -114,7 +115,8 @@ const Home = () => {
              </Card> 
         </div>     
         <div>
-            <Card style={{ width: '26rem' }}>
+            <Card className="text-center" style={{ width: '26rem', alignItems: 'center'}}>
+            <br/>
             <Card.Img variant="top" src={home3} height={200} width = {250} />
                 <Card.Body>
                     <Card.Title> Pump It Up </Card.Title>
@@ -134,7 +136,7 @@ const Home = () => {
                     <li className="list-inline-item"><a href="#">Partner</a></li>
 
                 </ul>
-            </footer>         
+            </footer>       
 </div>      
            
 
