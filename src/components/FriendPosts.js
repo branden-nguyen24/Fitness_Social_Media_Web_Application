@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Button, FormControl } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import foo from '../../src/pro1.png';
 import foo2 from '../../src/pro2.png';
 import foo3 from '../../src/pro3.png';

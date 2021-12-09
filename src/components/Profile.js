@@ -45,15 +45,15 @@ const Profile = () => {
 
     return (
       <div className="profile-container">
-        <div class="card mb-3" >
+        <div className="card mb-3" >
             <div className="profile-details" align={"center"}>
-                <img className="card-img-top" src={home} width={200} height={200} alt="Card image cap"/>
+                <img className="card-img-top" src={home} width={200} height={200} alt="none"/>
                 <div className="card-body">
                     <h3 className="card-title">{nickname}</h3>
                     <p className="card-text">{description}</p>
                     
-                    <label className="form-check-label" for="flexRadioDefault2"> <h5>Activities</h5> </label><br/>
-                    {activities.map(activity => <span className="activities-span">{activity}</span>)}
+                    <label className="form-check-label" htmlFor="flexRadioDefault2"> <h5>Activities</h5> </label><br/>
+                    {activities.map(activity => <span className="activities-span" key={activity}>{activity}</span>)}
                 </div>
                 <div className="btn-group">
                     <button className="list-group-item list-group-item-success" onClick={() => handleClick('calendar')}>Calendar</button>

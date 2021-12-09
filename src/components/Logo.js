@@ -2,19 +2,20 @@ import React from "react";
 import logo from "../logo.png";
 import { useNavigate } from "react-router";
 import { Link } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Form, FormControl, Button } from 'react-bootstrap'
-import { logoutUser } from "../redux/actions/userActions";
+//import { logoutUser } from "../redux/actions/userActions";
 
 const Logo = () => {
   const isLoggedIn = useSelector(state => state.userReducer.isLoggedIn);
-  const dispatch = useDispatch()
+  //const dispatch = useDispatch()
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/");
+    (isLoggedIn ? navigate('/profile') : navigate("/"));
   };
-  const handleLogout = () => {
-    dispatch(logoutUser())
+  const handleLogout = (e) => {
+    e.preventDefault();
+    navigate("/");
   };
   return (
    <div className="navbar-container">
@@ -41,7 +42,7 @@ const Logo = () => {
                   id="nav-button" 
                   className="btn btn-primary"
                   style={{margin:10}}
-                  onClick={handleLogout}
+                  onClick={(e) => handleLogout(e)}
                 >Logout</Link>
                   :
                   <div clasnname="navbar-buttons">

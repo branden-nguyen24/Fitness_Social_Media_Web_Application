@@ -15,6 +15,7 @@ const CreatePost = () => {
             postImage,
             postDescription
         }
+        dispatch(setPostDescription(''));
         dispatch(insertPost(newPost));
         navigate('/profile');
     }

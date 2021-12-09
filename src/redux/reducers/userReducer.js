@@ -59,7 +59,6 @@ const userReducer = (state = initialState(), action) => {
             }
         case 'LOGOUT_USER':
             return{
-                state: initialState()
                 
             }
         default: return state;

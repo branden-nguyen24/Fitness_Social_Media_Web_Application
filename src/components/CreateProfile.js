@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { setNickname, setAboutMe, setActivities, setProfileImage, loginUser } from '../redux/actions/userActions';
+import { setNickname, setAboutMe, setActivities, setProfileImage } from '../redux/actions/userActions';
 
 const CreateProfile = () => {
     useSelector(state => console.log('inside here', state))//just for test

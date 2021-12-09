@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home } from '.'
+
 import pan from '../../src/home.png';
 import pan1 from '../../src/home2.png';
 import pan2 from '../../src/home3.png';

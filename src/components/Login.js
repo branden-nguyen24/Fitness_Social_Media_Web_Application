@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const navigate = useNavigate();
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         navigate('/profile');
     };
     return (
          <div className="login-container input-box">
-            <form className="login-form" onSubmit={() => handleSubmit()}>
+            <form className="login-form" onSubmit={(e) => handleSubmit(e)}>
                 <h3>Login</h3>
                 <div>
                     <label>Email:</label>

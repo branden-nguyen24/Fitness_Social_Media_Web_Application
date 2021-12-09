@@ -16,8 +16,10 @@ import {
   Logo
 
 } from "./components";
+import { useSelector } from "react-redux";
 
 function App() {
+  useSelector(state=>console.log('inside here', state));
   return (
     <Router>
       <Logo />
