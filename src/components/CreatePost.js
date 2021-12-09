@@ -20,21 +20,23 @@ const CreatePost = () => {
     }
     useSelector(state => console.log(state));
     return (
-        <form className="createpost-container" onSubmit={handleOnSubmit}>
+        <form className="createpost-container input-box" onSubmit={handleOnSubmit} >
+            <div className="createpost-description">
+                <label> What's on your mind? </label>
+                <textarea
+                    value={postDescription}
+                    onChange={e => dispatch(setPostDescription(e.target.value))}
+                > </textarea>
+            </div>
             <div className="createpost-uploadphoto">
-                <label>Upload Photo</label><br/>
+                <label>Upload Photo</label>
                 <input 
                     type="file"
                     accept=".png,.jpeg" 
                     onChange={e => dispatch(setPostImage(e.target.files[0]))}
                 />
             </div>
-            <div className="createpost-description">
-                <textarea
-                    value={postDescription}
-                    onChange={e => dispatch(setPostDescription(e.target.value))}
-                > </textarea>
-            </div>
+            
             <button type="submit">Post</button>
         </form>
     )

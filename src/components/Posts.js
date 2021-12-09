@@ -1,13 +1,29 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { Card } from 'react-bootstrap';
 
 const Posts = () => {
     const posts = useSelector(state => state.postReducer.posts);
-    console.log('these are the posts', posts);
-    return posts.map(post => <div key={post}>
-                                <img src={URL.createObjectURL(post.postImage)} width={200} height={200} alt='none'/>
-                                <p>{post.postDescription}</p>
-                            </div>)
+    return posts.map(post => <Card style={{ width: '75%',
+                                            display:'block',
+                                            margin:'15px'}}>
+                                <Card.Img
+                                    
+                                    variant="top" 
+                                    src={URL.createObjectURL(post.postImage)} 
+                                    style={{ width: '75%',
+                                             height: "100%",
+                                            margin:"15px"}}
+                                />
+                                <Card.Body>
+                                
+                                <Card.Text>
+                                    {post.postDescription}
+                                </Card.Text>
+                                </Card.Body>
+                            </Card>)
 }
 
 export default Posts
+
+

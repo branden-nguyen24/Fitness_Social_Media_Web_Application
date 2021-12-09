@@ -1,5 +1,4 @@
 import React from "react";
-import { CustomPlaceholder } from "react-placeholder-image";
 import { useNavigate } from "react-router";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';

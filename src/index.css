@@ -155,8 +155,7 @@ code {
 /* Navbar css */
 .navbar-container{
   padding:5px;
-  position:relative;
-  border-bottom: black;
+  width:100%;
 }
 .navbar-logo, #navbar-search{
   float:left;
@@ -180,10 +179,15 @@ code {
   font-size: 100px;
   font-weight: bold;
   color:rgb(44, 110, 244);
+  text-shadow:
+   -1px -1px 0 rgb(222,88,90),  
+    1px -1px 0 rgb(222,88,90),
+    -1px 1px 0 rgb(222,88,90),
+     1px 1px 0 #000;
 }
 
-/* Register component styling */
-.register-container.input-box, .createprofile-container.input-box{
+/*Register component styling*/
+.register-container.input-box, .createprofile-container.input-box, .createpost-container.input-box{
   margin-top: 100px;
 }
 
@@ -193,18 +197,96 @@ code {
   margin-top:100px
   
 }
+
 .card.mb-3{
   width:100%;
 }
+
 .profile-details{
   margin-top: 30px;
 
 }
+
+
 .profile-details img{
   border-radius: 50%;
   height:300px;
   width:300px;
 }
+
+.btn-group button{
+  margin-left: 25px;
+  
+}
+
+.createpost-container{
+  margin-top:40px;
+}
+
+.activities-span{
+  margin-left:25px;
+}
+
+/* CreatePost component styling */
+.posts.input-box{
+  margin-top: 5px;
+}
+.card-img-top{
+  width:100%;
+}
+
+.profile-all{
+  text-align: center;
+}
+.card-img-top {
+  width: 45%;
+  height: 40vh;
+  object-fit: cover;
+ 
+}
+
+/* Home component styling */
+.home-container.input-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width:50%;
+
+}
+.d-block.w-100{
+  opacity: 0.85;
+}
+.carousel-label{
+  text-shadow:
+   -1px -1px 0 rgb(222,88,90),  
+    1px -1px 0 rgb(222,88,90),
+    -1px 1px 0 rgb(222,88,90),
+     1px 1px 0 #000;
+     font-size:250%;
+}
+
+/* Login  component styling */
+
+.login-container.input-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* Register component styling */
+.register-container.input-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 
 
 

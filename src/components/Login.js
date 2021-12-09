@@ -8,7 +8,7 @@ const Login = () => {
         navigate('/profile');
     };
     return (
-         <div className="login input-box">
+         <div className="login-container input-box">
             <form className="login-form" onSubmit={() => handleSubmit()}>
                 <h3>Login</h3>
                 <div>

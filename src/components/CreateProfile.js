@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { setNickname, setAboutMe, setActivities, setProfileImage } from '../redux/actions/userActions';
+import { setNickname, setAboutMe, setActivities, setProfileImage, loginUser } from '../redux/actions/userActions';
 
 const CreateProfile = () => {
     useSelector(state => console.log('inside here', state))//just for test
@@ -9,9 +9,14 @@ const CreateProfile = () => {
     const aboutMe = useSelector(state => state.userReducer.aboutme)
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    useSelector(state => console.log(state));
     const handleClick = (e) => {
         e.preventDefault();
         navigate('/profile');
+
+    }
+    const handleEntry = activity => {
+        dispatch(setActivities(activity))
     }
     return (
         <div className="createprofile-container input-box">
@@ -36,17 +41,17 @@ const CreateProfile = () => {
             <div>
                 <label>Pick your favorite activities</label>
                 <form className="checkbox-form">
-                    <input type="checkbox" onClick={() => dispatch(setActivities('Weight training'))}/>
+                    <input type="checkbox" onClick={() => handleEntry('Weight training')}/>
                     <label>Weight Training</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('Running'))}/>
+                    <input type="checkbox" onClick={() => handleEntry('Running')}/>
                     <label> Running</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('Swimming'))}/>
+                    <input type="checkbox" onClick={() => handleEntry('Swimming')}/>
                     <label> Swimming</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('Yoga'))}/>
+                    <input type="checkbox" onClick={() => handleEntry('Yoga')}/>
                     <label> Yoga</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('Sports'))}/>
+                    <input type="checkbox" onClick={() => handleEntry('Sports')}/>
                     <label> Sports</label><br/>
-                    <input type="checkbox" onClick={() => dispatch(setActivities('Bicycling'))}/>
+                    <input type="checkbox" onClick={() => handleEntry('Bicycling')}/>
                     <label> Bicycling</label>
                 </form>
             </div>
