@@ -17,6 +17,9 @@ const Logo = () => {
     e.preventDefault();
     navigate("/");
   };
+  const handleSearch = () => {
+    navigate('/searchresults');
+  }
   return (
    <div className="navbar-container">
 
@@ -33,7 +36,7 @@ const Logo = () => {
           className="me-2"
           aria-label="Search"
         />
-        <Button className="btn btn-primary">Search</Button>
+        <Button className="btn btn-primary" onClick={handleSearch}>Search</Button>
       </Form>
       
       {isLoggedIn ? 

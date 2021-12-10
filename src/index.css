@@ -187,10 +187,13 @@ code {
 }
 
 /*Register component styling*/
-.register-container.input-box, .createprofile-container.input-box, .createpost-container.input-box{
+.createprofile-container.input-box, .createpost-container.input-box{
   margin-top: 100px;
 }
 
+.register-container.input-box{
+  margin-top: 25px;
+}
 /* Profile component styling */
 .profile-container{
   width: 100%;
@@ -285,8 +288,18 @@ code {
   transform: translate(-50%, -50%);
 }
 
+/* Footer component styling */
+
+.list-inline{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
 
 
+
+/* SearchResult component styling */
 
 
 

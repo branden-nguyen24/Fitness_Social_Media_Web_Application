@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import homeImage from '../home1.jpg';
 import homeImage2 from '../home2.jpg';
 import homeImage3 from '../home.png'
-
+import { Footer } from './index'
 
 
 const Home = () => {
@@ -50,6 +50,7 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+      
   );
 };
 

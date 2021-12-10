@@ -13,7 +13,9 @@ import {
   Workouts,
   Photos,
   FriendPosts,
-  Logo
+  Logo,
+  Footer,
+  SearchResults
 
 } from "./components";
 import { useSelector } from "react-redux";
@@ -21,6 +23,7 @@ import { useSelector } from "react-redux";
 function App() {
   useSelector(state=>console.log('inside here', state));
   return (
+    
     <Router>
       <Logo />
       <div className="container">
@@ -36,8 +39,10 @@ function App() {
           <Route path="/photos" element={<Photos />} />
           <Route path="/friendposts" element={<FriendPosts />} />
           <Route path='/createpost' element={<CreatePost/>}/>
+          <Route path='/searchresults' element={<SearchResults/>}/>
         </Routes>
       </div>
+     
     </Router>
   );
 }

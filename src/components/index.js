@@ -11,3 +11,5 @@ export {default as FriendPosts} from './FriendPosts';
 export {default as Logo} from './Logo';
 export {default as CreatePost} from './CreatePost';
 export {default as Posts} from './Posts';
+export {default as Footer} from './Footer';
+export {default as SearchResults} from './SearchResults'
